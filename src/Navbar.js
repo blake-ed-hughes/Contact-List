@@ -13,9 +13,9 @@ const Navbar = () => {
         <li>
         <Link to="/create">Create New</Link>
         </li>
-        <li>
+        {/* <li>
         <Link to="/edit">Edit</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
