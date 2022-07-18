@@ -96,5 +96,7 @@ To explore the project, follow the instructions below.
 
 <!-- Contributor Links -->
 
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-grey?style=for-the-badge&logo=linkedin
+[github-shield]: https://img.shields.io/badge/-GitHub-grey?style=for-the-badge&logo=github
 [blake-linkedin]: https://www.linkedin.com/in/blakeedwardhughes/
 [blake-github]: https://github.com/blake-ed-hughes
