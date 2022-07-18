@@ -14,27 +14,30 @@ function Modal() {
   };
 
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
-        <div className="titleCloseBtn">
+    <div className="modal-background">
+      <div className="modal-container" aria-label="delete contact modal">
+        <div className="modal-close">
           <button
+            className="modal-close-button"
+            aria-label="modal close button"
             onClick={() => {
               setModalOpen(false);
             }}
           >
-            X
+            x
           </button>
         </div>
-        <div className="title">
+        <div className="modal-text" aria-label="modal content text">
           <h1>Are You Sure You Delete Contact?</h1>
         </div>
-        <div className="footer">
+        <div className="modal-buttons" aria-label="modal buttons">
           <button
             onClick={() => {
               setModalOpen(false);
               deleteContact();
             }}
-            id="continueBtn"
+            id="continue-button"
+            aria-label="contine to delete contact button"
           >
             Continue
           </button>
@@ -42,7 +45,8 @@ function Modal() {
             onClick={() => {
               setModalOpen(false);
             }}
-            id="cancelBtn"
+            id="cancel-delete-button"
+            aria-label="cancel contact delete button"
           >
             Cancel
           </button>

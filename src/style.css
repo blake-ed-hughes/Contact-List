@@ -9,7 +9,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav {
+/* site title & nav bar */
+
+.site-title {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.nav-bar {
   background-color: #20393f;
   color: rgb(255, 255, 255);
   display: flex;
@@ -21,7 +28,7 @@ body {
   width: 100%;
 }
 
-.nav ul {
+.nav-bar ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -30,8 +37,8 @@ body {
   font-size: 2rem;
 }
 
-.nav a {
-  color:#ffffff;
+.nav-bar a {
+  color: #ffffff;
   text-decoration: none;
   height: 100%;
   display: flex;
@@ -39,14 +46,11 @@ body {
   padding: 0.5rem;
 }
 
-.site-title {
-  color:#ffffff;
-  font-size: 4rem;
-}
-
-.nav li:hover {
+.nav-bar li:hover {
   background-color: #345c68;
 }
+
+/* contact list */
 
 .container {
   margin: 2rem;
@@ -63,6 +67,8 @@ body {
   overflow: "auto";
   margin-top: 6rem;
 }
+
+/* contact card */
 
 .card {
   background-color: #20393f;
@@ -123,7 +129,7 @@ body {
 
 .trash-icon {
   font-size: 25px;
-  color:  rgb(150, 7, 100);
+  color: rgb(150, 7, 100);
   background: transparent;
   border: none !important;
 }
@@ -152,7 +158,9 @@ body {
   word-wrap: break-word;
 }
 
-.modalBackground {
+/* delete contact modal  */
+
+.modal-background {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.744);
@@ -163,7 +171,7 @@ body {
   margin-top: -1rem;
 }
 
-.modalContainer {
+.modal-container {
   border: solid 4px rgb(255, 255, 255);
   width: 500px;
   height: 400px;
@@ -176,60 +184,73 @@ body {
   margin-top: -4rem;
 }
 
-.modalContainer .title {
+.modal-container .modal-text {
   color: white;
   display: inline-block;
   text-align: center;
   margin-top: 10px;
 }
 
-.titleCloseBtn {
+.modal-close {
   display: flex;
   justify-content: flex-end;
 }
 
-.titleCloseBtn button {
+.modal-close button {
   color: crimson;
   background-color: transparent;
   border: none;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-.titleCloseBtn button:hover {
-  color:rgb(255, 255, 255);
+.modal-close button:hover {
+  color: rgb(255, 255, 255);
 }
 
-.modalContainer .footer {
-  flex: 20%;
+.modal-container .modal-buttons {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex: 25%;
 }
 
-.modalContainer .footer button {
-  width: 150px;
-  height: 45px;
-  margin: 10px;
-  border: none;
+#continue-button {
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+  font-weight: 600;
   background-color: rgb(7, 150, 86);
   color: rgb(255, 255, 255);
-  border-radius: 8px;
-  font-size: 20px;
+  font-size: 1.2rem;
+  width: 10rem;
+  gap: 2rem;
   cursor: pointer;
 }
 
-#continueBtn:hover {
+#continue-button:hover {
   background-color: rgb(3, 255, 142);
 }
 
-#cancelBtn {
+#cancel-delete-button {
+  font-weight: 600;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 12px;
   background-color: rgba(255, 0, 162, 0.56);
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  width: 10rem;
+  text-align: center;
+  cursor: pointer;
 }
 
-#cancelBtn:hover {
+#cancel-delete-button:hover {
   background-color: rgb(255, 0, 162);
 }
+
+/* create new & edit contact forms  */
 
 form {
   margin: 3rem;
@@ -259,7 +280,7 @@ label {
   font-weight: 600;
   display: block;
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
@@ -269,11 +290,11 @@ input {
   width: 100%;
 }
 
-#addNewBtn {
+#add-new-button {
   margin: 2rem;
   padding: 0.5rem;
   border-radius: 12px;
-  background-color: rgb(7, 150, 86);;
+  background-color: rgb(7, 150, 86);
   color: rgb(255, 255, 255);
   font-size: 1rem;
   width: 10rem;
@@ -281,11 +302,11 @@ input {
   cursor: pointer;
 }
 
-#addNewBtn:hover {
+#add-new-button:hover {
   background-color: rgb(3, 255, 142);
 }
 
-#cancelContactBtn {
+#cancel-button {
   margin: 2rem;
   padding: 0.5rem;
   border-radius: 12px;
@@ -297,7 +318,7 @@ input {
   cursor: pointer;
 }
 
-#cancelContactBtn:hover {
+#cancel-button:hover {
   background-color: rgb(255, 0, 162);
 }
 
@@ -466,7 +487,7 @@ input {
     .email-address {
       font-size: 15px;
       margin-top: 2rem;
-      width: 12rem;
+      width: 10rem;
     }
 
     legend {

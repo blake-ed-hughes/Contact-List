@@ -6,8 +6,8 @@ const ContactList = () => {
   const { contactData } = useContext(ContactContext);
 
   return (
-    <div className="contacts">
-      <ul>
+    <div className="contacts" aria-label="contact list">
+      <ul aria-label="unordered list of contacts">
         {contactData.map((contact, index) => (
           <li key={index}>
             <ContactCard key={index} contact={contact} />

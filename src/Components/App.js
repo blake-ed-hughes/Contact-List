@@ -98,22 +98,17 @@ const App = () => {
         setContactToDelete,
       }}
     >
-      <div className="App">
-
-        {modalOpen && <Modal />}
-
-        <BrowserRouter>
-          <Navbar />
-          <div className="container">
-            <Routes>
-              <Route path="/" element={<ContactList />} />
-              <Route path="/create" element={<CreateNew />} />
-              <Route path="/edit/:id" element={<EditList />} />
-            </Routes>
-          </div>
-        </BrowserRouter>
-
-      </div>
+      {modalOpen && <Modal />}
+      <BrowserRouter>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<ContactList />} />
+            <Route path="/create" element={<CreateNew />} />
+            <Route path="/edit/:id" element={<EditList />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </ContactContext.Provider>
   );
 };
