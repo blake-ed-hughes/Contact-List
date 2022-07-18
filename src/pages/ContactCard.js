@@ -15,38 +15,14 @@ const ContactCard = ({ contact }) => {
   // };
 
   const chevronClass = showAllContactInfo
-    ? "fa fa-chevron-down"
-    : "fa fa-chevron-up";
+    ? "fa fa-chevron-up"
+    : "fa fa-chevron-down";
 
   return (
     <div>
       <div className="card">
         <div className="card-header">
           <p className="full-name">{contact.first + " " + contact.last}</p>
-
-          {/* <div className="icons">
-            <div
-              className="chevron-icon"
-              onClick={() => {
-                setShowAllContactInfo(!showAllContactInfo);
-              }}
-            >
-              <i className={chevronClass}></i>
-            </div>
-            <Link to={"/edit/" + contact.id} className="edit-icon">
-              <i className="fa-solid fa-pen-to-square"></i>
-            </Link>
-            <div
-              className="trash-icon"
-              onClick={() => {
-                setModalOpen(true);
-                setContactToDelete(contact);
-              }}
-            >
-              <i className="fa-solid fa-trash"></i>
-            </div>
-          </div> */}
-
           <div className="icons">
             <button
               className="chevron-icon"

@@ -7,7 +7,7 @@ const ContactList = () => {
 
   return (
     <div className="contacts">
-      <ul style={{ maxHeight: "78vh", maxWidth: "100%", overflow: "auto" }}>
+      <ul>
         {contactData.map((contact, index) => (
           <li key={index}>
             <ContactCard key={index} contact={contact} />

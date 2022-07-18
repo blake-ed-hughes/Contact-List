@@ -5,7 +5,7 @@ import { ContactContext } from "./ContactContext";
 function Modal() {
   const { contactData, setContactData } = useContext(ContactContext);
   const { setModalOpen } = useContext(ContactContext);
-  const { contactToDelete} = useContext(ContactContext);
+  const { contactToDelete } = useContext(ContactContext);
 
   const deleteContact = () => {
     setContactData(
@@ -32,18 +32,19 @@ function Modal() {
           <button
             onClick={() => {
               setModalOpen(false);
+              deleteContact();
             }}
-            id="cancelBtn"
+            id="continueBtn"
           >
-            Cancel
+            Continue
           </button>
           <button
             onClick={() => {
               setModalOpen(false);
-              deleteContact();
             }}
+            id="cancelBtn"
           >
-            Continue
+            Cancel
           </button>
         </div>
       </div>

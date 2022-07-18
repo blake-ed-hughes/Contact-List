@@ -12,12 +12,13 @@ const EditList = () => {
 
   const [updatedContact, setUpdatedContact] = useState({
     id: String(contactPathId),
-    first: "",
-    last: "",
-    phone: "",
-    email: "",
+    first: contact[0].first,
+    last: contact[0].last,
+    phone: contact[0].phone,
+    email: contact[0].email,
   });
 
+  console.log("updatedContact =====>", updatedContact);
   const handleChange = (event) => {
     setUpdatedContact({
       ...updatedContact,
