@@ -2,7 +2,7 @@
 
 <br/>
 
-## A front-end contact list application
+## a front-end contact list application
 
 <br/>
 
@@ -55,8 +55,8 @@ A simple contact list application desgined to showcase contact cards with basic 
 
 - [React](https://reactjs.org/)
 - [React Router](https://reactrouter.com/)
-- [HTML5]()
-- [CSS3]()
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [Parcel](https://parceljs.org//)
 
 <br><br>
@@ -84,10 +84,12 @@ To explore the project, follow the instructions below.
    ```sh
    npm install
    ```
-3. In another terminal run the express server on port: 1234
+3. Navigate to the main Contact-List folder and install the local dependencies: npm i
+
+4. In another terminal run the express server on port: 1234
    ```sh
     npm run dev
    ```
-4. Navigate to `localhost:1234` in your browser
+5. Navigate to `localhost:1234` in your browser
 
 <br><br>
