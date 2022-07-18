@@ -86,10 +86,15 @@ To explore the project, follow the instructions below.
    ```
 3. Navigate to the main Contact-List folder and install the local dependencies: npm i
 
-4. In another terminal run the express server on port: 1234
+4. In another terminal run the server on port: 1234
    ```sh
     npm run dev
    ```
 5. Navigate to `localhost:1234` in your browser
 
 <br><br>
+
+<!-- Contributor Links -->
+
+[blake-linkedin]: https://www.linkedin.com/in/blakeedwardhughes/
+[blake-github]: https://github.com/blake-ed-hughes
