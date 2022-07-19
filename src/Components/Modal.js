@@ -28,7 +28,7 @@ function Modal() {
           </button>
         </div>
         <div className="modal-text" aria-label="modal content text">
-          <h1>Are You Sure You Delete Contact?</h1>
+          <h1>Are You Sure You Want To Delete Contact?</h1>
         </div>
         <div className="modal-buttons" aria-label="modal buttons">
           <button
