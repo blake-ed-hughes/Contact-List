@@ -6,7 +6,7 @@ const CreateNew = () => {
   const { contactData, setContactData } = useContext(ContactContext);
 
   const [newContact, setNewContact] = useState({
-    id: String(contactData.length + 1),
+    id: "",
     first: "",
     last: "",
     phone: "",
@@ -21,6 +21,7 @@ const CreateNew = () => {
   };
 
   const addContact = () => {
+    newContact.id = newContact.phone;
     contactData.unshift(newContact);
   };
 
